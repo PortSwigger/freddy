@@ -13,17 +13,19 @@ repositories {
 dependencies {
     compile 'net.portswigger.burp.extender:burp-extender-api:1.7.22'
     testCompile 'junit:junit:4.12'
-    testCompile 'org.powermock:powermock-module-junit4:1.7.4'
-    testCompile 'org.powermock:powermock-api-mockito2:1.7.4'
+    testCompile 'org.powermock:powermock-module-junit4:2.0.5'
+    testCompile 'org.powermock:powermock-api-mockito2:2.0.5'
     compile group: 'com.esotericsoftware', name: 'minlog', version: '1.3.1'
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
 // deviates from standard Gradle directory structure
 sourceSets.main.java.srcDirs = ['src']
 sourceSets.test.java.srcDirs = ['test']
 
-version = '2.2.3'
+version = '2.2.4'
 group 'trust.nccgroup'
 
 jar {
